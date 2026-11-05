@@ -1,0 +1,69 @@
+/* 6. Imagen de fondo en el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809'); /* Imagen de fondo de ejemplo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Contenedor principal */
+.main-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.92); /* Fondo semi-transparente para facilitar la lectura */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* Header con flexbox para alinear el logo a la izquierda */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 15px 25px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Contenido principal */
+.content {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.stream-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.stream-link:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    padding: 20px 25px;
+    font-size: 0.9em;
+    border-top: 2px solid #334155;
+}
+
+.footer a {
+    color: #38bdf8;
+}
